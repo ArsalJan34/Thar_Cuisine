@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TC Restaurant Menu</title>
+  <link rel="StyleSheet" href="./style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <!-- <div class="logo"><img src="./images/BODYFACTORY (1).png"></div> -->
+    <nav class="sidebar">
+      <a href="#" onclick="hideSidebar()"><i class='bx bx-x'></i></a>
+      <a href="#">Home</a>
+      <a href="#services">Menu</a>
+      <a href="#packages">Order</a>
+      <a href="#timing">Contact</a>
+    </nav>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#services">Menu</a>
+      <a href="#packages">Order</a>
+      <a href="#timing">Contact</a>
+    </nav>
+    <div class="menu-icon" onclick="showSidebar()">
+      <a href="#"><i class='bx bx-menu'></i></a>
+    </div>
+  </header>
+  <main>
+
+    <section class="section">
+      <div class="section-header">🍗 BBQ</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Chicken Tikka Chest</span><span
+            class="item-price">Rs.450</span><button class="order-btn" data-name="Chicken Tikka Chest"
+            data-price="450">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Tikka Leg</span><span class="item-price">Rs.450</span><button
+            class="order-btn" data-name="Chicken Tikka Leg" data-price="450">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Malai Tikka</span><span
+            class="item-price">Rs.550</span><button class="order-btn" data-name="Chicken Malai Tikka"
+            data-price="550">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Kalmi Tikka</span><span
+            class="item-price">Rs.900</span><button class="order-btn" data-name="Chicken Kalmi Tikka"
+            data-price="900">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Boti</span><span class="item-price">Rs.900</span><button
+            class="order-btn" data-name="Chicken Boti" data-price="900">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Behari Boti</span><span
+            class="item-price">Rs.900</span><button class="order-btn" data-name="Chicken Behari Boti"
+            data-price="900">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Malai Boti</span><span class="item-price">Rs.960</span><button
+            class="order-btn" data-name="Chicken Malai Boti" data-price="960">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Reshmi Kabab</span><span
+            class="item-price">Rs.950</span><button class="order-btn" data-name="Chicken Reshmi Kabab"
+            data-price="950">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Gola Kabab</span><span
+            class="item-price">Rs.1000</span><button class="order-btn" data-name="Chicken Gola Kabab"
+            data-price="1000">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Afghani Boti</span><span
+            class="item-price">Rs.960</span><button class="order-btn" data-name="Chicken Afghani Boti"
+            data-price="960">Order</button></div>
+        <div class="item"><span class="item-name">Mutton Chanp</span><span class="item-price">Rs.1800</span><button
+            class="order-btn" data-name="Mutton Chanp" data-price="1800">Order</button></div>
+        <div class="item"><span class="item-name">Mutton Namkeen Boti</span><span
+            class="item-price">Rs.1700</span><button class="order-btn" data-name="Mutton Namkeen Boti"
+            data-price="1700">Order</button></div>
+        <div class="item"><span class="item-name">Fish Tikka</span><span class="item-price">Rs.1000</span><button
+            class="order-btn" data-name="Fish Tikka" data-price="1000">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🥦 VEG. BBQ</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Paneer Tikka Boti</span><span class="item-price">Rs.950</span><button
+            class="order-btn" data-name="Paneer Tikka Boti" data-price="950">Order</button></div>
+        <div class="item"><span class="item-name">Paneer Tikka</span><span class="item-price">Rs.800</span><button
+            class="order-btn" data-name="Paneer Tikka" data-price="800">Order</button></div>
+        <div class="item"><span class="item-name">Paneer Malai Boti</span><span class="item-price">Rs.950</span><button
+            class="order-btn" data-name="Paneer Malai Boti" data-price="950">Order</button></div>
+        <div class="item"><span class="item-name">Veg Kabab</span><span class="item-price">Rs.700</span><button
+            class="order-btn" data-name="Veg Kabab" data-price="700">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🍽 RESTAURANT SPECIAL</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Mutton Dum Pukht</span><span class="item-price">Rs.3500</span><button
+            class="order-btn" data-name="Mutton Dum Pukht" data-price="3500">Order</button></div>
+        <div class="item"><span class="item-name">Mutton Saji (1 KG)</span><span
+            class="item-price">Rs.3800</span><button class="order-btn" data-name="Mutton Saji (1 KG)"
+            data-price="3800">Order</button></div>
+        <div class="item"><span class="item-name">Mutton Mandi (1 KG)</span><span
+            class="item-price">Rs.4000</span><button class="order-btn" data-name="Mutton Mandi (1 KG)"
+            data-price="4000">Order</button></div>
+        <div class="item"><span class="item-name">Mutton Pulao</span><span class="item-price">Rs.1300</span><button
+            class="order-btn" data-name="Mutton Pulao" data-price="1300">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Pulao</span><span class="item-price">Rs.1100</span><button
+            class="order-btn" data-name="Chicken Pulao" data-price="1100">Order</button></div>
+        <div class="item"><span class="item-name">Veg Pulao</span><span class="item-price">Rs.750</span><button
+            class="order-btn" data-name="Veg Pulao" data-price="750">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🍱 PLATTER</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">BBQ Platter (Half)</span><span
+            class="item-price">Rs.2700</span><button class="order-btn" data-name="BBQ Platter (Half)"
+            data-price="2700">Order</button></div>
+        <div class="item"><span class="item-name">BBQ Platter (Full)</span><span
+            class="item-price">Rs.5000</span><button class="order-btn" data-name="BBQ Platter (Full)"
+            data-price="5000">Order</button></div>
+        <div class="item"><span class="item-name">Veg Platter (Half)</span><span
+            class="item-price">Rs.1600</span><button class="order-btn" data-name="Veg Platter (Half)"
+            data-price="1600">Order</button></div>
+        <div class="item"><span class="item-name">Veg Platter (Full)</span><span
+            class="item-price">Rs.3000</span><button class="order-btn" data-name="Veg Platter (Full)"
+            data-price="3000">Order</button></div>
+        <div class="item"><span class="item-name">TC Special Platter</span><span
+            class="item-price">Rs.8000</span><button class="order-btn" data-name="TC Special Platter"
+            data-price="8000">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🥗 RAITA & SALAD</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Russian Salad</span><span class="item-price">Rs.750</span><button
+            class="order-btn" data-name="Russian Salad" data-price="750">Order</button></div>
+        <div class="item"><span class="item-name">Fruit Salad</span><span class="item-price">Rs.750</span><button
+            class="order-btn" data-name="Fruit Salad" data-price="750">Order</button></div>
+        <div class="item"><span class="item-name">Green Salad</span><span class="item-price">Rs.150</span><button
+            class="order-btn" data-name="Green Salad" data-price="150">Order</button></div>
+        <div class="item"><span class="item-name">TC Special Salad</span><span class="item-price">Rs.700</span><button
+            class="order-btn" data-name="TC Special Salad" data-price="700">Order</button></div>
+        <div class="item"><span class="item-name">Mint Raita</span><span class="item-price">Rs.170</span><button
+            class="order-btn" data-name="Mint Raita" data-price="170">Order</button></div>
+        <div class="item"><span class="item-name">Zeera Raita</span><span class="item-price">Rs.150</span><button
+            class="order-btn" data-name="Zeera Raita" data-price="150">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🥪 SANDWICHES</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Chicken Sandwich</span><span class="item-price">Rs.650</span><button
+            class="order-btn" data-name="Chicken Sandwich" data-price="650">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Club Sandwich</span><span
+            class="item-price">Rs.750</span><button class="order-btn" data-name="Chicken Club Sandwich"
+            data-price="750">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Cheese Sandwich</span><span
+            class="item-price">Rs.800</span><button class="order-btn" data-name="Chicken Cheese Sandwich"
+            data-price="800">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Crispy Sandwich</span><span
+            class="item-price">Rs.950</span><button class="order-btn" data-name="Chicken Crispy Sandwich"
+            data-price="950">Order</button></div>
+        <div class="item"><span class="item-name">Grilled Sandwich</span><span class="item-price">Rs.900</span><button
+            class="order-btn" data-name="Grilled Sandwich" data-price="900">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🍗 FRIED CUISINE</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Zinger Burger</span><span class="item-price">Rs.750</span><button
+            class="order-btn" data-name="Zinger Burger" data-price="750">Order</button></div>
+        <div class="item"><span class="item-name">Zinger Cheese Burger</span><span
+            class="item-price">Rs.850</span><button class="order-btn" data-name="Zinger Cheese Burger"
+            data-price="850">Order</button></div>
+        <div class="item"><span class="item-name">Zinger Tower Burger</span><span
+            class="item-price">Rs.950</span><button class="order-btn" data-name="Zinger Tower Burger"
+            data-price="950">Order</button></div>
+        <div class="item"><span class="item-name">Zinger Shawarma</span><span class="item-price">Rs.700</span><button
+            class="order-btn" data-name="Zinger Shawarma" data-price="700">Order</button></div>
+        <div class="item"><span class="item-name">French Fries</span><span class="item-price">Rs.350</span><button
+            class="order-btn" data-name="French Fries" data-price="350">Order</button></div>
+        <div class="item"><span class="item-name">Masala Fries</span><span class="item-price">Rs.400</span><button
+            class="order-btn" data-name="Masala Fries" data-price="400">Order</button></div>
+        <div class="item"><span class="item-name">Loaded Fries</span><span class="item-price">Rs.650</span><button
+            class="order-btn" data-name="Loaded Fries" data-price="650">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🥣 DIP SAUCES</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Garlic Mayo</span><span class="item-price">Rs.200</span><button
+            class="order-btn" data-name="Garlic Mayo" data-price="200">Order</button></div>
+        <div class="item"><span class="item-name">Thousand Island</span><span class="item-price">Rs.200</span><button
+            class="order-btn" data-name="Thousand Island" data-price="200">Order</button></div>
+        <div class="item"><span class="item-name">Honey Mustard</span><span class="item-price">Rs.250</span><button
+            class="order-btn" data-name="Honey Mustard" data-price="250">Order</button></div>
+        <div class="item"><span class="item-name">BBQ Sauce</span><span class="item-price">Rs.220</span><button
+            class="order-btn" data-name="BBQ Sauce" data-price="220">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🥤 BEVERAGE</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Soft Drink (Can)</span><span class="item-price">Rs.150</span><button
+            class="order-btn" data-name="Soft Drink (Can)" data-price="150">Order</button></div>
+        <div class="item"><span class="item-name">Water Bottle</span><span class="item-price">Rs.100</span><button
+            class="order-btn" data-name="Water Bottle" data-price="100">Order</button></div>
+        <div class="item"><span class="item-name">Cold Drink (1 Litre)</span><span
+            class="item-price">Rs.220</span><button class="order-btn" data-name="Cold Drink (1 Litre)"
+            data-price="220">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🥛 LASSI</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Sweet Lassi</span><span class="item-price">Rs.300</span><button
+            class="order-btn" data-name="Sweet Lassi" data-price="300">Order</button></div>
+        <div class="item"><span class="item-name">Salted Lassi</span><span class="item-price">Rs.300</span><button
+            class="order-btn" data-name="Salted Lassi" data-price="300">Order</button></div>
+        <div class="item"><span class="item-name">Special Lassi</span><span class="item-price">Rs.400</span><button
+            class="order-btn" data-name="Special Lassi" data-price="400">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🍨 ICE CREAM</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Vanilla Scoop</span><span class="item-price">Rs.250</span><button
+            class="order-btn" data-name="Vanilla Scoop" data-price="250">Order</button></div>
+        <div class="item"><span class="item-name">Chocolate Scoop</span><span class="item-price">Rs.300</span><button
+            class="order-btn" data-name="Chocolate Scoop" data-price="300">Order</button></div>
+        <div class="item"><span class="item-name">Strawberry Scoop</span><span class="item-price">Rs.300</span><button
+            class="order-btn" data-name="Strawberry Scoop" data-price="300">Order</button></div>
+        <div class="item"><span class="item-name">Mix Flavour Cup</span><span class="item-price">Rs.400</span><button
+            class="order-btn" data-name="Mix Flavour Cup" data-price="400">Order</button></div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="section-header">🍸 MARGARITA</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">TC Special Margarita</span><span
+            class="item-price">Rs.550</span><button class="order-btn" data-name="TC Special Margarita"
+            data-price="550">Order</button></div>
+        <div class="item"><span class="item-name">Mint Margarita</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Mint Margarita" data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Strawberry Margarita</span><span
+            class="item-price">Rs.500</span><button class="order-btn" data-name="Strawberry Margarita"
+            data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Blue Berry Margarita</span><span
+            class="item-price">Rs.500</span><button class="order-btn" data-name="Blue Berry Margarita"
+            data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Peach Margarita</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Peach Margarita" data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Rose Margarita</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Rose Margarita" data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Lemon Margarita</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Lemon Margarita" data-price="500">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">☕ COLD COFFEE</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Vanilla Cold Coffee</span><span
+            class="item-price">Rs.450</span><button class="order-btn" data-name="Vanilla Cold Coffee"
+            data-price="450">Order</button></div>
+        <div class="item"><span class="item-name">Cold Coffee</span><span class="item-price">Rs.450</span><button
+            class="order-btn" data-name="Cold Coffee" data-price="450">Order</button></div>
+        <div class="item"><span class="item-name">Chocolate Cold Coffee</span><span
+            class="item-price">Rs.450</span><button class="order-btn" data-name="Chocolate Cold Coffee"
+            data-price="450">Order</button></div>
+        <div class="item"><span class="item-name">Caramel Cold Coffee</span><span
+            class="item-price">Rs.450</span><button class="order-btn" data-name="Caramel Cold Coffee"
+            data-price="450">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🔥 HOT COFFEE</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Cappuccino</span><span class="item-price">Rs.400</span><button
+            class="order-btn" data-name="Cappuccino" data-price="400">Order</button></div>
+        <div class="item"><span class="item-name">Espresso Shots</span><span class="item-price">Rs.250</span><button
+            class="order-btn" data-name="Espresso Shots" data-price="250">Order</button></div>
+        <div class="item"><span class="item-name">American Black Coffee</span><span
+            class="item-price">Rs.300</span><button class="order-btn" data-name="American Black Coffee"
+            data-price="300">Order</button></div>
+        <div class="item"><span class="item-name">Hot Latte</span><span class="item-price">Rs.400</span><button
+            class="order-btn" data-name="Hot Latte" data-price="400">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🧇 WAFFLE</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Nutella Waffle</span><span class="item-price">Rs.600</span><button
+            class="order-btn" data-name="Nutella Waffle" data-price="600">Order</button></div>
+        <div class="item"><span class="item-name">Cookies & Cream Waffle</span><span
+            class="item-price">Rs.600</span><button class="order-btn" data-name="Cookies & Cream Waffle"
+            data-price="600">Order</button></div>
+        <div class="item"><span class="item-name">Lotus Waffle</span><span class="item-price">Rs.600</span><button
+            class="order-btn" data-name="Lotus Waffle" data-price="600">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🥤 THAR CUISINE BAR (SHAKES)</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">TC Special Shake (Dates, Almonds, Figs)</span><span
+            class="item-price">Rs.600</span><button class="order-btn" data-name="TC Special Shake"
+            data-price="600">Order</button></div>
+        <div class="item"><span class="item-name">Oreo Nutella Shake</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Oreo Nutella Shake" data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Kitkat Shake</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Kitkat Shake" data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Lotus Shake</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Lotus Shake" data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Vanilla Shake</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Vanilla Shake" data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Choco Shake</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Choco Shake" data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Strawberry Shake</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Strawberry Shake" data-price="500">Order</button></div>
+        <div class="item"><span class="item-name">Sneakers Shake</span><span class="item-price">Rs.500</span><button
+            class="order-btn" data-name="Sneakers Shake" data-price="500">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">🍊 FRESH JUICES</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Banana</span><span class="item-price">Rs.250</span><button
+            class="order-btn" data-name="Banana" data-price="250">Order</button></div>
+        <div class="item"><span class="item-name">Apple</span><span class="item-price">Rs.350</span><button
+            class="order-btn" data-name="Apple" data-price="350">Order</button></div>
+        <div class="item"><span class="item-name">Peach</span><span class="item-price">Rs.250</span><button
+            class="order-btn" data-name="Peach" data-price="250">Order</button></div>
+        <div class="item"><span class="item-name">Strawberry</span><span class="item-price">Rs.300</span><button
+            class="order-btn" data-name="Strawberry" data-price="300">Order</button></div>
+        <div class="item"><span class="item-name">Cheko</span><span class="item-price">Rs.250</span><button
+            class="order-btn" data-name="Cheko" data-price="250">Order</button></div>
+        <div class="item"><span class="item-name">Pineapple</span><span class="item-price">Rs.300</span><button
+            class="order-btn" data-name="Pineapple" data-price="300">Order</button></div>
+        <div class="item"><span class="item-name">Mango</span><span class="item-price">Rs.250</span><button
+            class="order-btn" data-name="Mango" data-price="250">Order</button></div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <div id="orderModal">
+    <div class="modal-content">
+      <h3>Place Order</h3>
+      <form id="orderForm">
+        <label>Item</label>
+        <input id="itemName" readonly>
+        <label>Qty</label>
+        <input id="qty" type="number" min="1" value="1">
+        <label>Name</label>
+        <input id="customerName">
+        <label>Phone</label>
+        <input id="phone" required>
+        <label>Pickup/Delivery</label>
+        <select id="mode">
+          <option>Pickup</option>
+          <option>Delivery</option>
+          <option>Table</option>
+        </select>
+        <label>Notes</label>
+        <textarea id="notes" rows="2"></textarea>
+        <button type="button" id="cancelOrder">Cancel</button>
+        <button type="submit">Confirm & Send</button>
+      </form>
+    </div>
+  </div>
+  <div id="toast" class="toast">Order prepared — actions triggered.</div>
+  <script src="./script.js">
+
+  </script>
+</body>
+
+</html>

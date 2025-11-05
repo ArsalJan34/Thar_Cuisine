@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* consistent box model */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
  :root {
    --primary: #F9C74F;
    --bg: #FFF9F1;
@@ -18,8 +30,88 @@
    color: white;
    font-size: 24px;
    font-weight: bold;
+   display: flex;
+   justify-content: center;
+   align-items: center;
  }
+.navbar {
+  display: flex;
+  gap: 30px;
+}
 
+.navbar a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color .25s ease, border-bottom .25s ease;
+}
+
+.navbar a:hover {
+  color: orangered;
+  border-bottom: 0.5px solid orangered;
+}
+
+/* Menu icon shown on small screens */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon .bx-menu {
+  color: orangered;
+  font-size: 32px;
+  margin-right: 20px;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  /* hidden by default */
+  width: 250px;
+  height: 100vh;
+  padding: 25px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: right 0.4s ease;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('./images/carbonfiberbg.png') repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar.show {
+  right: 0;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  margin: 18px 0;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color .25s ease;
+}
+
+.sidebar a:hover {
+  color: orangered;
+  border-bottom: 0.5px solid orangered;
+}
+
+.sidebar .bx-x {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.sidebar .bx-x:hover {
+  color: orangered;
+}
  main {
    max-width: 1200px;
    margin: auto;
@@ -131,7 +223,19 @@
  }
 
  @media (max-width: 768px) {
-   .item {
+.navbar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon .bx-menu {
+    margin-right: 0;
+  }
+
+  .item {
      flex-direction: column;
      align-items: flex-start;
    }

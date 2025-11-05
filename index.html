@@ -7,10 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TC Restaurant Menu</title>
   <link rel="StyleSheet" href="./style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>TC Restaurant Menu</header>
+<header id="header" class="header">
+  <!-- <div class="logo"><img src="./images/BODYFACTORY (1).png"></div> -->
+  <nav class="sidebar">
+    <a href="#" onclick="hideSidebar()"><i class='bx bx-x'></i></a>
+    <a href="#">Home</a>
+    <a href="./menu.html">Menu</a>
+    <a href="#packages">Order</a>
+    <a href="#timing">Contact</a>
+  </nav>
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#services">Menu</a>
+    <a href="#packages">Order</a>
+    <a href="#timing">Contact</a>
+  </nav>
+  <div class="menu-icon" onclick="showSidebar()">
+    <a href="#"><i class='bx bx-menu'></i></a>
+  </div>
+</header>
   <main>
 
 <section class="section">

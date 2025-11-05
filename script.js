@@ -15,3 +15,13 @@
     document.getElementById('cancelOrder').onclick = () => modal.style.display = 'none';
     form.onsubmit = async e => { e.preventDefault(); const d = { item: itemName.value, qty: parseInt(qty.value), price: document.querySelector(`[data-name='${itemName.value}']`).dataset.price, customer: customerName.value, phone: phone.value, mode: mode.value, notes: notes.value }; wa(d); mail(d); await formSend(d); modal.style.display = 'none'; toast('Order sent successfully!') }
     window.onclick = e => { if (e.target == modal) modal.style.display = 'none' }
+
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.add("show");
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.remove("show");
+}
