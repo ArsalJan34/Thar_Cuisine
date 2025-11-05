@@ -1,5 +1,5 @@
- const PHONE_NUMBER = '923001234567';
-    const RESTAURANT_EMAIL = 'restaurant@example.com';
+ const PHONE_NUMBER = '+923700666140';
+    const RESTAURANT_EMAIL = 'arsaljaan649@gmail.com';
     const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
 
     function encodeMsg(t) { return encodeURIComponent(t) };
