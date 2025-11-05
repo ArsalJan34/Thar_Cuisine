@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TC Restaurant Menu</title>
+  <link rel="StyleSheet" href="./style.css">
+</head>
+
+<body>
+  <header>TC Restaurant Menu</header>
+  <main>
+    <section class="section">
+      <div class="section-header">BBQ</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Chicken Tikka Chest</span><span
+            class="item-price">Rs.450</span><button class="order-btn" data-name="Chicken Tikka Chest"
+            data-price="450">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Malai Tikka</span><span
+            class="item-price">Rs.550</span><button class="order-btn" data-name="Chicken Malai Tikka"
+            data-price="550">Order</button></div>
+        <div class="item"><span class="item-name">Chicken Kalmi Tikka</span><span
+            class="item-price">Rs.900</span><button class="order-btn" data-name="Chicken Kalmi Tikka"
+            data-price="900">Order</button></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">Restaurant Special</div>
+      <div class="menu-items">
+        <div class="item"><span class="item-name">Mutton Dum Pukht</span><span class="item-price">Rs.3500</span><button
+            class="order-btn" data-name="Mutton Dum Pukht" data-price="3500">Order</button></div>
+        <div class="item"><span class="item-name">Mutton Mandi (1KG)</span><span
+            class="item-price">Rs.4000</span><button class="order-btn" data-name="Mutton Mandi"
+            data-price="4000">Order</button></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="orderModal">
+    <div class="modal-content">
+      <h3>Place Order</h3>
+      <form id="orderForm">
+        <label>Item</label>
+        <input id="itemName" readonly>
+        <label>Qty</label>
+        <input id="qty" type="number" min="1" value="1">
+        <label>Name</label>
+        <input id="customerName">
+        <label>Phone</label>
+        <input id="phone" required>
+        <label>Pickup/Delivery</label>
+        <select id="mode">
+          <option>Pickup</option>
+          <option>Delivery</option>
+          <option>Table</option>
+        </select>
+        <label>Notes</label>
+        <textarea id="notes" rows="2"></textarea>
+        <button type="button" id="cancelOrder">Cancel</button>
+        <button type="submit">Confirm & Send</button>
+      </form>
+    </div>
+  </div>
+  <div id="toast" class="toast">Order prepared — actions triggered.</div>
+  <script src="./script.js">
+
+  </script>
+</body>
+
+</html>
