@@ -46,25 +46,37 @@
    padding: 20px;
  }
 
- .item {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
-   padding: 10px 0;
- }
 
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  /* name | price | button */
+  align-items: center;
+  column-gap: 20px;
+ margin-bottom: 10px;
+}
+
+.item-name {
+  justify-self: start;
+}
+
+.item-price {
+  justify-self: center;
+  /* centers horizontally */
+  text-align: center;
+  /* centers text */
+}
+
+.order-btn {
+  justify-self: end;
+}
  .item:last-child {
    border-bottom: none;
  }
 
- .item-name {
-   font-weight: 500;
- }
 
- .item-price {
-   font-weight: bold;
- }
+
+
 
  .order-btn {
    background: var(--primary);
