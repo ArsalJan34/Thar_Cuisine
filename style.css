@@ -21,7 +21,7 @@ body {
 /* ===== HEADER ===== */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 15px 30px;
   background: transparent;
@@ -33,6 +33,7 @@ body {
 .navbar {
   display: flex;
   gap: 30px;
+
 }
 
 .navbar a {
@@ -166,7 +167,7 @@ body {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('images/thar-bg.jpg') center/cover no-repeat;
+    url('./images/web\ bg.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
