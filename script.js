@@ -25,3 +25,25 @@ function hideSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.classList.remove("show");
 }
+
+const menuToggle = document.getElementById("menuToggle");
+const menuItems = document.getElementById("menuItems");
+const sidebar = document.getElementById("sidebar");
+const sidebarMenuToggle = document.getElementById("sidebarMenuToggle");
+const sidebarMenuItems = document.getElementById("sidebarMenuItems");
+
+menuToggle.addEventListener("click", () => {
+  menuItems.classList.toggle("hidden");
+});
+
+sidebarMenuToggle.addEventListener("click", (e) => {
+  e.preventDefault();
+  sidebarMenuItems.classList.toggle("hidden");
+});
+
+function showSidebar() {
+  sidebar.classList.add("show");
+}
+function hideSidebar() {
+  sidebar.classList.remove("show");
+}
