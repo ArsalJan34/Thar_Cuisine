@@ -10,11 +10,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-:root {
-  --primary: #F9C74F;
-  --bg: #FFF9F1;
-  --text: #222;
-}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -29,7 +24,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: #111;
+  background: transparent;
   color: white;
   position: relative;
 }
@@ -41,7 +36,7 @@ body {
 }
 
 .navbar a {
-  color: white;
+  color: gold;
   font-size: 20px;
   font-weight: 500;
   padding-bottom: 2px;
@@ -223,19 +218,20 @@ main {
 
 /* ===== MENU SECTIONS ===== */
 .section {
-  background: #FFF8E7;
+  background: transparent;
   border-radius: 20px;
   margin-bottom: 30px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .section-header {
-  background: var(--primary);
+  background: black;
   color: white;
   padding: 15px;
   border-radius: 20px 20px 0 0;
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
 }
 
 .menu-items {
@@ -244,6 +240,7 @@ main {
 
 /* ===== MENU ITEM ROWS ===== */
 .item {
+  color: white;
   display: grid;
   grid-template-columns: 1fr auto auto;
   align-items: center;
@@ -262,12 +259,13 @@ main {
 
 .order-btn {
   justify-self: end;
-  background: var(--primary);
-  border: none;
+  background: transparent;
+ border: gold 2px solid;
   border-radius: 8px;
   padding: 6px 12px;
   cursor: pointer;
   margin-left: 10px;
+  color: gold;
 }
 
 .order-btn:hover {
