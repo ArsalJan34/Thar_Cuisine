@@ -60,7 +60,7 @@ margin-left: 100px;
 }
 
 .menu-icon .bx-menu {
-  color: orangered;
+  color:white;
   font-size: 32px;
   margin-right: 20px;
 }
@@ -436,24 +436,84 @@ main {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  /* Navbar */
   .navbar {
     display: none;
   }
 
   .menu-icon {
     display: block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
   }
 
-  .menu-icon .bx-menu {
-    margin-right: 0;
+  /* Sidebar */
+  .sidebar {
+    width: 70%;
+    right: -70%;
+    background: rgba(0, 0, 0, 0.9);
   }
 
-  .item {
+  .sidebar.show {
+    right: 0;
+  }
+
+  /* Top Dishes */
+  .top-dishes {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  /* Footer */
+  .footer-content {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 1rem;
   }
 
-  .item-price {
-    margin-top: 5px;
+  .f-links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .f-links ul li a {
+    font-size: 16px;
   }
 }
