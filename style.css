@@ -6,7 +6,6 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -14,42 +13,28 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: rgb(37, 36, 36);
-  color: var(--text);
-  margin: 0;
-}
 
-/* ===== HEADER ===== */
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-  background: transparent;
-  color: white;
-  position: relative;
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
-  display: flex;
-  gap: 30px;
 
 }
+.header{
+display: flex;
+align-items: center;
+justify-content: left;
 
+padding: 20px 10px;
+}
 .navbar a {
   color: gold;
   font-size: 20px;
   font-weight: 500;
-  padding-bottom: 2px;
-  border-bottom: 2px solid transparent;
-  transition: color .25s ease, border-bottom .25s ease;
 }
-
-.navbar a:hover {
-  color: orangered;
-  border-bottom: 0.5px solid orangered;
+.navbar{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+margin-left: 100px;
 }
-
 /* ===== MENU TOGGLE (ARROW BUTTON) ===== */
 .menu-with-toggle {
   display: flex;
@@ -165,16 +150,23 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('./images/web\ bg.png') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
+background-image: url(./images/tharcuisinebg.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
 }
+.hero-content{
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+    }
 
 .hero-content h1 {
   font-size: 3.5rem;
